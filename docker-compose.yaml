@@ -2,6 +2,8 @@ version: '2'
 services:
   testws:
     image: registry-internal.cn-hangzhou.aliyuncs.com/yontact/testws
+    ports:
+      - "1337"
     restart: always
     labels:
       aliyun.proxy.VIRTUAL_HOST: http://testws.58ee.top,ws://testws.58ee.top
