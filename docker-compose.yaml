@@ -8,5 +8,6 @@ services:
     labels:
       aliyun.proxy.VIRTUAL_HOST: http://testws.58ee.top,ws://testws.58ee.top
       aliyun.rolling_updates: "true"
-      aliyun.scale: "1"
+      aliyun.scale: "2"
+      aliyun.proxy.COOKIE: "SRV insert indirect nocache"
 
